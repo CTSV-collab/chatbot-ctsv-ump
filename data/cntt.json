@@ -1,0 +1,17 @@
+[
+  {
+    "intent": "mat_khau_microsoft",
+    "questions": [
+    "em bị mất mật khẩu đăng nhập",
+    "quên mật khẩu",
+    "không đăng nhập được",
+    "tài khoản microsoft",
+    "elearning",
+    "không đăng nhập được vào tài khoản sv.ump.edu.vn",
+    "mật khẩu office 365",
+    "khóa tài khoản"
+    ],
+    "answer": "Chào em, Phòng Công tác sinh viên gửi em cách thức lấy lại Mật khẩu đăng nhập\n Sinh viên vui lòng gửi email đến Trung tâm Công nghệ thông tin: cntt@ump.edu.vn để được hỗ trợ.\nKhi gửi mail cần cung cấp thông tin như sau:\n- Mã số sinh viên:\n- Họ và tên:\n- Nội dung: Xin hỗ trợ cấp lại mật khẩu\nTài khoản cần hỗ trợ: xx@ump.edu.vn (SV ghi địa chỉ email của mình)\nLưu ý: Đính kèm ảnh chụp thẻ sinh viên"
+
+  }
+]
