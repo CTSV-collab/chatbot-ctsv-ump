@@ -104,16 +104,20 @@ app.post("/chat", async (req, res) => {
 
   intents.forEach(intent => {
     intent.questions.forEach(q => {
-      const score = stringSimilarity.compareTwoStrings(
-        question,
-        normalize(q)
-      );
+  const qNorm = normalize(q);
 
-      if (score > bestScore) {
-        bestScore = score;
-        bestMatch = intent;
-      }
-    });
+  if (question.includes(qNorm)) {
+    bestScore = 1;
+    bestMatch = intent;
+    return;
+  }
+
+  const score = stringSimilarity.compareTwoStrings(question, qNorm);
+  if (score > bestScore) {
+    bestScore = score;
+    bestMatch = intent;
+  }
+});
   });
 
   console.log({
@@ -122,7 +126,7 @@ app.post("/chat", async (req, res) => {
     intent: bestMatch?.intent || "NO_MATCH"
   });
 
-  if (bestMatch && bestScore >= 0.35) {
+  if (bestMatch && bestScore >= 0.25) {
     return res.json({ answer: bestMatch.answer });
   }
 
