@@ -17,14 +17,6 @@
     "có học bổng không ạ"
   ],
   "answer": "🎓 Nhà trường có nhiều **chương trình học bổng** dành cho sinh viên như:\n- Học bổng khuyến khích học tập\n- Học bổng tài trợ từ doanh nghiệp\n- Học bổng hỗ trợ sinh viên khó khăn\n📌 Thông báo chi tiết sẽ được đăng trên website và fanpage Phòng CTSV."
-},
-
-{
-  "intent": "quy_che_hoc_bong",
-  "questions": [
-      "quy chế học bổng",
-      "quy định học bổng"
-  ],
-  "answer": "📗 **Quy chế học bổng - UMP** xem tại:<br>👉 <a href='/docs/1497qd_ban_hanh_quy_dinh_ve_chinh_sach_hoc_bong_cho_sv_dai_hoc_chinh_quy_tai_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
 }
+
 ]
