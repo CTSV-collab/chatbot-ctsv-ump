@@ -29,7 +29,7 @@
     ],
     "answer": "📗 **Quy chế học bổng - UMP** xem tại:<br>👉 <a href='/docs/1497qd_ban_hanh_quy_dinh_ve_chinh_sach_hoc_bong_cho_sv_dai_hoc_chinh_quy_tai_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
   },
-  
+
   {
     "intent": "giay_xac_nhan",
     "questions": [
@@ -39,7 +39,7 @@
       "giấy tạm hoãn nghĩa vụ",
       "thủ tục xin giấy xác nhận"
     ],
-    "answer": "Chào em, Phòng gửi em link hướng dẫn đề xuất các biểu mẫu:\nhttps://sv.ump.edu.vn/sinh-vien/tin-tuc/huong-dan-de-xuat-bieu-mau-030718.html?pIDDanhMuc=13\nLưu ý: Nếu muốn xin Bảng Giấy, Tại mục ghi chú: điền 'Xin Bảng Giấy',\nNếu không điền thì hệ thống sẽ mặc định là cấp Bảng ký số\nThân mến."
+    "answer": "Chào em, Phòng gửi em link hướng dẫn đề xuất các biểu mẫu: <br> <a href='https://sv.ump.edu.vn/sinh-vien/tin-tuc/huong-dan-de-xuat-bieu-mau-030718.html?pIDDanhMuc=13' target='_blank'>👉 Xem hướng dẫn đề xuất biểu mẫu</a> \nLưu ý: Nếu muốn xin Bảng Giấy, Tại mục ghi chú: điền 'Xin Bảng Giấy',\nNếu không điền thì hệ thống sẽ mặc định là cấp Bảng ký số\nThân mến."
   },
 
   {
