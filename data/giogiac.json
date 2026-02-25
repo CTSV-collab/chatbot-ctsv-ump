@@ -2,20 +2,30 @@
   {
     "intent": "gio_lam_viec",
     "questions": [
-      "giờ làm việc phòng CTSV",
-      "thời gian làm việc",
-      "phòng ctsv làm việc khi nào",
-      "mấy giờ phòng ctsv làm việc",
-      "giờ làm việc của phòng",
+      "giờ làm việc phòng ctsv",
+      "phòng ctsv làm việc giờ nào",
       "phòng làm việc đến mấy giờ",
+      "giờ làm việc buổi sáng",
+      "giờ làm việc buổi chiều",
+      "sáng phòng làm đến mấy giờ",
+      "chiều phòng làm đến mấy giờ",
+      "phòng có làm việc hôm nay không",
       "chiều nay phòng có làm không",
-      "sáng phòng có làm không"
+      "sáng nay phòng có làm không"
     ],
-    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu, \n Buổi sáng từ 07h00-11h30 \n Buổi chiều từ 13h00-16h30."
+    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu,<b>Buổi sáng từ 07h00-11h30<b>Buổi chiều từ 13h00-16h30."
   },
   {
     "intent": "ngay_khong_lam_viec",
-    "questions": ["thứ bảy", "cuối tuần", "phòng có làm việc vào cuối tuần không"],
+    "questions": [
+      "phòng có làm việc thứ bảy không",
+      "thứ bảy phòng có làm không",
+      "chủ nhật phòng có làm không",
+      "cuối tuần phòng có làm việc không",
+      "phòng ctsv có làm việc vào cuối tuần không",
+      "ngày nghỉ phòng có làm không",
+      "nghỉ lễ phòng có làm không"
+    ],
     "answer": "Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định."
   }
 ]

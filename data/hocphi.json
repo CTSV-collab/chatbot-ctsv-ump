@@ -8,5 +8,16 @@
       "hạn đóng học phí"
     ],
     "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường."
+  },
+
+ {
+    "intent": "gia_han_hoc_phi",
+    "questions": [
+      "gia hạn học phí",
+      "em muốn xin gia hạn học phí",
+      "thời hạn để xin gia hạn",
+      "thời gian gia hạn đến khi nào"
+    ],
+    "answer": "Sinh viên nộp hồ sơ xin gia hạn học phí về Trường/Khoa đang theo học theo thông báo hiện hành."
   }
 ] 

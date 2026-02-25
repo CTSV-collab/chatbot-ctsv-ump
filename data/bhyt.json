@@ -1,12 +1,19 @@
 [
   {
     "intent": "bhyt_la_gi",
-    "questions": ["bhyt là gì", "bảo hiểm y tế là gì"],
+    "questions": [
+    "bhyt là gì",
+    "bảo hiểm y tế là gì"
+    ],
     "answer": "BHYT sinh viên là bảo hiểm y tế bắt buộc theo quy định, giúp sinh viên được chi trả chi phí khám chữa bệnh khi tham gia khám đúng tuyến."
   },
   {
     "intent": "mua_bhyt_o_dau",
-    "questions": ["mua bhyt ở đâu", "đăng ký bhyt", "làm bhyt ở đâu"],
-    "answer": "Sinh viên đăng ký và đóng BHYT thông qua Nhà trường theo thông báo của Phòng Công tác Sinh viên vào đầu mỗi năm học."
+    "questions": [
+    "mua bhyt ở đâu",
+    "đăng ký bhyt",
+    "làm bhyt ở đâu"
+  ],
+    "answer": "Sinh viên đăng ký và đóng BHYT thông qua Nhà trường theo thông báo của Phòng Công tác Sinh viên"
   }
 ]
