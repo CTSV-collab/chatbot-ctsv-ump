@@ -1,6 +1,6 @@
 async function sendMessage() {
   const input = document.getElementById("userInput");
-  const message = input.value.trim();
+  const message = input.value.trim().toLowerCase();
   if (!message) return;
 
   const chatMessages = document.getElementById("chatMessages");

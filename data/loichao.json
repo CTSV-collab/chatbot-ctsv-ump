@@ -1,0 +1,12 @@
+[
+  {
+    "intent": "loi_chao",
+    "questions": [
+      "hello",
+      "xin chào",
+      "dạ em chào phòng",
+      "dạ cho em hỏi"
+    ],
+    "answer": "Chào bạn, bạn cần hỗ trợ nội dung gì?"
+  }
+]
