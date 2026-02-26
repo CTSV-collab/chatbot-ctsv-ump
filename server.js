@@ -78,27 +78,109 @@ function loadData() {
 const intents = loadData();
 console.log(`📚 Đã load ${intents.length} intent`);
 
+//TRẢ LỜI THEO NGÀY
+function getVietnamWeekday() {
+  // Trả về: "Thứ Hai", "Thứ Ba", ... "Chủ Nhật"
+  const s = new Intl.DateTimeFormat("vi-VN", {
+    timeZone: "Asia/Ho_Chi_Minh",
+    weekday: "long"
+  }).format(new Date());
+
+  // Chuẩn hoá viết hoa chữ đầu (tuỳ máy có thể trả "thứ hai")
+  return s.replace(/^./, c => c.toUpperCase());
+}
+
+function isWeekendVN(weekday) {
+  const w = normalize(weekday); // dùng normalize bạn đã có
+  return w.includes("chu nhat") || w.includes("thu bay");
+}
+
+function buildWorkingHoursAnswer() {
+  return (
+    'Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu.<br>' +
+    '<b>Buổi sáng:</b> 07h00–11h30<br>' +
+    '<b>Buổi chiều:</b> 13h00–16h30<br>' +
+    'Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định.'
+  );
+}
+
+function buildSessionAnswer(session) {
+  if (session === "morning") {
+    return (
+      '<b>Sáng nay:</b> 07h00–11h30.<br>' +
+      'Nếu em cần hỗ trợ thêm, em có thể đến trong giờ hành chính nhé.'
+    );
+  }
+  if (session === "afternoon") {
+    return (
+      '<b>Chiều nay:</b> 13h00–16h30.<br>' +
+      'Nếu em cần hỗ trợ thêm, em có thể đến trong giờ hành chính nhé.'
+    );
+  }
+  // fallback
+  return buildWorkingHoursAnswer();
+}
+
+function detectTodaySession(questionNorm) {
+  // Bắt các mẫu phổ biến
+  if (questionNorm.includes("sang nay")) return "morning";
+  if (questionNorm.includes("chieu nay")) return "afternoon";
+  if (questionNorm.includes("hom nay")) return "today";
+  return null;
+}
+
 /* =====================
    CHAT API
 ===================== */
 app.post("/chat", async (req, res) => {
   const questionRaw = (req.body?.question || "").toString().trim();
-  if (!questionRaw) {
+    if (!questionRaw) {
     return res.json({ answer: "⚠️ Không nhận được câu hỏi." });
   }
+  const question = normalize(questionRaw);
+  // ✅ Trả lời thông minh cho "hôm nay / sáng nay / chiều nay" về giờ làm việc
+const session = detectTodaySession(question);
+
+// Nếu người dùng đang hỏi về việc phòng có làm không + gợi ý giờ
+const askingWorkingTime =
+  question.includes("phong") ||
+  question.includes("ctsv") ||
+  question.includes("gio lam") ||
+  question.includes("thoi gian lam") ||
+  question.includes("lam viec");
+
+if (session && askingWorkingTime) {
+  const weekday = getVietnamWeekday();
+
+  if (isWeekendVN(weekday)) {
+    return res.json({
+      answer:
+        `Hôm nay là <b>${weekday}</b> nên Phòng <b>không làm việc</b>.<br>` +
+        "Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định."
+    });
+  }
+
+  // Thứ Hai–Thứ Sáu
+  if (session === "morning") return res.json({ answer: buildSessionAnswer("morning") });
+  if (session === "afternoon") return res.json({ answer: buildSessionAnswer("afternoon") });
+
+  // "hôm nay"
+  return res.json({
+    answer:
+      `Hôm nay là <b>${weekday}</b>. ` +
+      buildWorkingHoursAnswer()
+  });
+} 
+
 
   // Debug log (Render logs)
   console.log("📝 Question:", questionRaw);
-
-  const question = normalize(questionRaw);
-  let bestMatch = null;
-  let bestScore = 0;
 
   // Dùng for...of để có thể break thật
   for (const intent of intents) {
     for (const qNorm of intent.questionsNorm) {
       // match chứa cụm từ (ưu tiên tuyệt đối)
-      if (qNorm.length >= 10 && question.includes(qNorm)) {
+      if (qNorm.length >= 8 && question.includes(qNorm)) {
         bestScore = 1;
         bestMatch = intent;
         break;
