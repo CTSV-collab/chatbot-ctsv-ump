@@ -134,61 +134,58 @@ function detectTodaySession(questionNorm) {
 ===================== */
 app.post("/chat", async (req, res) => {
   const questionRaw = (req.body?.question || "").toString().trim();
-    if (!questionRaw) {
+  if (!questionRaw) {
     return res.json({ answer: "⚠️ Không nhận được câu hỏi." });
   }
-  // ✅ Trả lời thông minh cho "hôm nay / sáng nay / chiều nay" về giờ làm việc
-const session = detectTodaySession(question);
-
-// Nếu người dùng đang hỏi về việc phòng có làm không + gợi ý giờ
-const askingWorkingTime =
-  question.includes("phong") ||
-  question.includes("ctsv") ||
-  question.includes("gio lam") ||
-  question.includes("thoi gian lam") ||
-  question.includes("lam viec");
-
-if (session && askingWorkingTime) {
-  const weekday = getVietnamWeekday();
-
-  if (isWeekendVN(weekday)) {
-    return res.json({
-      answer:
-        `Hôm nay là <b>${weekday}</b> nên Phòng <b>không làm việc</b>.<br>` +
-        "Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định."
-    });
-  }
-
-  // Thứ Hai–Thứ Sáu
-  if (session === "morning") return res.json({ answer: buildSessionAnswer("morning") });
-  if (session === "afternoon") return res.json({ answer: buildSessionAnswer("afternoon") });
-
-  // "hôm nay"
-  return res.json({
-    answer:
-      `Hôm nay là <b>${weekday}</b>. ` +
-      buildWorkingHoursAnswer()
-  });
-} 
-
 
   // Debug log (Render logs)
   console.log("📝 Question:", questionRaw);
 
-  const question = normalize(questionRaw);
-  let bestMatch = null; 
+  // ✅ normalize sớm để dùng xuyên suốt
+  const questionNorm = normalize(questionRaw);
+
+  // ✅ Trả lời thông minh cho "hôm nay / sáng nay / chiều nay" về giờ làm việc
+  const session = detectTodaySession(questionNorm);
+
+  const askingWorkingTime =
+    questionNorm.includes("phong") ||
+    questionNorm.includes("ctsv") ||
+    questionNorm.includes("gio lam") ||
+    questionNorm.includes("thoi gian lam") ||
+    questionNorm.includes("lam viec");
+
+  if (session && askingWorkingTime) {
+    const weekday = getVietnamWeekday();
+
+    if (isWeekendVN(weekday)) {
+      return res.json({
+        answer:
+          `Hôm nay là <b>${weekday}</b> nên Phòng <b>không làm việc</b>.<br>` +
+          "Phòng không làm việc vào thứ Bảy, Chủ nhật và các ngày lễ theo quy định."
+      });
+    }
+
+    if (session === "morning") return res.json({ answer: buildSessionAnswer("morning") });
+    if (session === "afternoon") return res.json({ answer: buildSessionAnswer("afternoon") });
+
+    return res.json({
+      answer: `Hôm nay là <b>${weekday}</b>. ` + buildWorkingHoursAnswer()
+    });
+  }
+
+  // --- phần match intents dùng questionNorm ---
+  let bestMatch = null;
   let bestScore = 0;
-  // Dùng for...of để có thể break thật
+
   for (const intent of intents) {
     for (const qNorm of intent.questionsNorm) {
-      // match chứa cụm từ (ưu tiên tuyệt đối)
-      if (qNorm.length >= 8 && question.includes(qNorm)) {
+      if (qNorm.length >= 8 && questionNorm.includes(qNorm)) {
         bestScore = 1;
         bestMatch = intent;
         break;
       }
 
-      const score = stringSimilarity.compareTwoStrings(question, qNorm);
+      const score = stringSimilarity.compareTwoStrings(questionNorm, qNorm);
       if (score > bestScore) {
         bestScore = score;
         bestMatch = intent;
@@ -202,7 +199,6 @@ if (session && askingWorkingTime) {
     intent: bestMatch?.intent || "NO_MATCH"
   });
 
-  // Bạn có thể tăng ngưỡng lên 0.35 nếu thấy trả lời nhầm
   const THRESHOLD = 0.25;
 
   if (bestMatch && bestScore >= THRESHOLD) {
