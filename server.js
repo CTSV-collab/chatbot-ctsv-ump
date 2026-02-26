@@ -137,7 +137,6 @@ app.post("/chat", async (req, res) => {
     if (!questionRaw) {
     return res.json({ answer: "⚠️ Không nhận được câu hỏi." });
   }
-  const question = normalize(questionRaw);
   // ✅ Trả lời thông minh cho "hôm nay / sáng nay / chiều nay" về giờ làm việc
 const session = detectTodaySession(question);
 
@@ -176,6 +175,9 @@ if (session && askingWorkingTime) {
   // Debug log (Render logs)
   console.log("📝 Question:", questionRaw);
 
+  const question = normalize(questionRaw);
+  let bestMatch = null; 
+  let bestScore = 0;
   // Dùng for...of để có thể break thật
   for (const intent of intents) {
     for (const qNorm of intent.questionsNorm) {
