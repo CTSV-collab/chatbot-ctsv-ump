@@ -1,0 +1,75 @@
+[
+    {
+  "intent": "thong_tin_hoc_bong_tai_tro",
+  "questions": [
+    "học bổng tài trợ là gì",
+    "học bổng này của trường hay bên ngoài",
+    "nguồn học bổng từ đâu",
+    "sinh viên năm nhất xin được không",
+    "học bổng xét theo năm hay học kỳ"
+  ],
+  "answer": "Học bổng tài trợ là học bổng do các tổ chức, cá nhân ngoài Trường tài trợ cho sinh viên.<br>Điều kiện nhận học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ và được nêu rõ trong thông báo học bổng."
+  },
+
+  {
+  "intent": "gia_tri_hoc_bong",
+  "questions": [
+    "một suất học bổng bao nhiêu tiền",
+    "học bổng được bao nhiêu tiền",
+    "học bổng có phải trả lại không"
+  ],
+  "answer": "Giá trị học bổng phụ thuộc vào quy định và ngân sách của Nhà tài trợ."
+  },
+
+  {
+  "intent": "dieu_kien_xet_hoc_bong_tai_tro",
+  "questions": [
+    "điều kiện xin học bổng tài trợ",
+    "gpa bao nhiêu thì được học bổng",
+    "điểm bao nhiêu thì được học bổng",
+    "điểm rèn luyện thấp có bị loại không",
+    "học lực trung bình có được xét không",
+    "hoàn cảnh khó khăn có bắt buộc không",
+    "đang bị cảnh báo học tập có nộp được không"
+  ],
+  "answer": "Điều kiện xét học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ như:<br>- Kết quả học tập<br>- Điểm rèn luyện<br>- Hoàn cảnh gia đình<br>- Tham gia hoạt động xã hội<br><br>Sinh viên vi phạm kỷ luật hoặc bị cảnh báo học tập có thể không đủ điều kiện xét học bổng."
+  },
+
+  {
+  "intent": "ho_so_hoc_bong",
+  "questions": [
+    "hồ sơ xin học bổng gồm gì",
+    "có mẫu đơn xin học bổng không",
+    "nộp hồ sơ online hay giấy",
+    "có cần xác nhận địa phương không",
+    "thiếu giấy tờ có bổ sung được không",
+    "hồ sơ nộp trễ có được nhận không"
+  ],
+  "answer": "Hồ sơ xin học bổng phụ thuộc vào yêu cầu của từng Nhà tài trợ, thường bao gồm:<br>- Đơn xin học bổng<br>- Bảng điểm học tập<br>- Bảng điểm rèn luyện<br>- Giấy xác nhận tham gia hoạt động xã hội<br>- Giấy xác nhận hoàn cảnh khó khăn (nếu có)<br><br>Sinh viên cần nộp hồ sơ đúng thời hạn theo thông báo."
+  },
+
+  {
+  "intent": "ket_qua_hoc_bong",
+  "questions": [
+    "bao giờ có kết quả học bổng",
+    "có email báo kết quả không",
+    "không đậu thì có biết lý do không",
+    "bao lâu thì được nhận tiền học bổng",
+    "nhận tiền mặt hay chuyển khoản",
+    "tiền học bổng có bị trừ học phí không"
+  ],
+  "answer": "Kết quả học bổng sẽ được công bố trên các kênh thông tin chính thức của Phòng CTSV.<br>Sinh viên có thể nhận học bổng bằng tiền mặt hoặc chuyển khoản tùy theo quy định của Nhà tài trợ."
+  },
+
+  {
+  "intent": "sau_khi_nhan_hoc_bong",
+  "questions": [
+    "có phải tham gia lễ trao học bổng không",
+    "có phải viết thư cảm ơn không",
+    "học bổng có ràng buộc gì không",
+    "có bị thu hồi học bổng không",
+    "nhận học bổng rồi bảo lưu thì sao"
+  ],
+  "answer": "Một số học bổng có yêu cầu sinh viên tham gia lễ trao học bổng hoặc thực hiện các hoạt động tri ân theo quy định của Nhà tài trợ.<br>Sinh viên vi phạm quy định có thể bị thu hồi học bổng."
+  }
+]
