@@ -13,7 +13,7 @@
       "chiều nay phòng có làm không",
       "sáng nay phòng có làm không"
     ],
-    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu,<b>Buổi sáng từ 07h00-11h30<b>Buổi chiều từ 13h00-16h30."
+    "answer": "Phòng Công tác Sinh viên làm việc từ thứ Hai đến thứ Sáu<br>Buổi sáng từ <b>07h00-11h30<br>Buổi chiều từ <b>13h00-16h30."
   },
   {
     "intent": "ngay_khong_lam_viec",

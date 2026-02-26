@@ -1,0 +1,30 @@
+[
+  {
+    "intent": "dang_ky_ktx",
+    "questions": [
+      "đăng ký ktx",
+      "đăng ký ký túc xá",
+      "làm sao để ở ký túc xá",
+      "thủ tục đăng ký ktx",
+      "xin ở ký túc xá",
+      "đăng ký ở nội trú",
+      "đăng ký phòng ký túc xá",
+      "khi nào đăng ký ktx",
+      "đăng ký ktx ở đâu",
+      "làm hồ sơ ở ký túc xá"
+    ],
+    "answer": "Sinh viên có nhu cầu đăng ký ở Ký túc xá vui lòng theo dõi thông báo của Nhà trường.<br>Hồ sơ đăng ký và thời gian tiếp nhận sẽ được thông báo cụ thể từng đợt.<br>Liên hệ Ký túc xá để được hỗ trợ thêm.<br><br> THÔNG TIN LIÊN HỆ:<br>📧 Email: kytucxa@ump.edu.vn <br> ☎️ SĐT: 028.3855.5167"
+  },
+  {
+    "intent": "chi_phi_ktx",
+    "questions": [
+      "chi phí ở ktx",
+      "ở ký túc xá bao nhiêu tiền",
+      "giá phòng ký túc xá",
+      "tiền phòng ktx",
+      "ở ktx hết bao nhiêu tiền",
+      "phí ở nội trú"
+    ],
+    "answer": "Chi phí ở Ký túc xá sẽ được Nhà trường thông báo theo từng năm học.<br>Sinh viên vui lòng theo dõi thông báo chính thức hoặc liên hệ Ký túc xá để biết thêm chi tiết."
+  }
+]

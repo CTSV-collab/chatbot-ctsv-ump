@@ -207,7 +207,11 @@ app.post("/chat", async (req, res) => {
 
   return res.json({
     answer:
-      "🤔 Mình chưa chắc chắn câu hỏi này. Bạn có thể hỏi theo cách khác hoặc liên hệ trực tiếp Phòng CTSV nhé!"
+      "Xin lỗi, câu hỏi của em có thể không nằm trong phạm vi hỗ trợ tự động của Chatbot.<br>" +
+    "Em vui lòng liên hệ trực tiếp Phòng CTSV để được giải đáp:<br><br>" +
+    "📞 <b>Điện thoại:</b> 028.3853.7976<br>" +
+    "📧 <b>Email:</b> ctsv@ump.edu.vn<br><br>" +
+    "Phòng CTSV sẽ hỗ trợ em trong thời gian làm việc."
   });
 });
 

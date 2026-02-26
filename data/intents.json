@@ -1,15 +1,4 @@
   [
-    {
-    "intent": "diem_ren_luyen",
-    "questions": [
-      "điểm rèn luyện",
-      "chấm điểm rèn luyện",
-      "xét điểm rèn luyện",
-      "quy định điểm rèn luyện"
-    ],
-    "answer": "📊 **Quy định chấm điểm rèn luyện sinh viên UMP** xem tại:<br>👉 <a href='/docs/5158_quy_che_danh_gia_ket_qua_ren_luyen.pdf' target='_blank'>Xem / tải file PDF</a>"
-  },
-
   {
     "intent": "quy_che_cong_tac_sinh_vien",
     "questions": [
@@ -21,14 +10,6 @@
     "answer": "📘 **Quy chế Công tác Sinh viên – UMP** xem tại:<br>👉 <a href='/docs/1691qd_ban_hanh_quy_che_ctsv_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
   },
 
-  {
-    "intent": "quy_che_hoc_bong",
-    "questions": [
-      "quy chế học bổng",
-      "quy định học bổng"
-    ],
-    "answer": "📗 **Quy chế học bổng - UMP** xem tại:<br>👉 <a href='/docs/1497qd_ban_hanh_quy_dinh_ve_chinh_sach_hoc_bong_cho_sv_dai_hoc_chinh_quy_tai_dhyd_tphcm.pdf'target='_blank'>Xem / tải file PDF</a>"
-  },
 
   {
     "intent": "giay_xac_nhan",
@@ -52,6 +33,6 @@
       "cách liên hệ phòng ctsv",
       "liên hệ phòng qua đâu"
     ],
-    "answer": "🏢 **Phòng Công tác Sinh viên – Đại học Y Dược TPHCM**<br>📍 Lầu 1 - Tòa nhà 15 tầng - Cơ sở 217 Hồng Bàng, Phường Chợ Lớn, TPHCM<br>📧 Email: ctsv@ump.edu.vn <br> ☎️ SĐT: 028.38537976."
+    "answer": "🏢 Phòng Công tác Sinh viên – Đại học Y Dược TPHCM<br>📍 Lầu 1-Tòa nhà 15 tầng-Cơ sở 217 Hồng Bàng, Phường Chợ Lớn, TPHCM<br>📧 Email: ctsv@ump.edu.vn <br> ☎️ SĐT: 028.3853.7976"
   }
 ]

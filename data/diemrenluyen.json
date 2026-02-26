@@ -1,0 +1,52 @@
+[
+  {
+    "intent": "diem_ren_luyen_la_gi",
+    "questions": [
+      "điểm rèn luyện là gì",
+      "đrl là gì",
+      "điểm rèn luyện để làm gì",
+      "vai trò của điểm rèn luyện",
+      "điểm rèn luyện có quan trọng không"
+    ],
+    "answer": "Điểm rèn luyện là tiêu chí đánh giá ý thức học tập, chấp hành nội quy và tham gia hoạt động của sinh viên trong từng học kỳ.<br>Điểm rèn luyện được sử dụng để xét học bổng, khen thưởng, kỷ luật và một số quyền lợi khác theo quy định của Nhà trường.<br> Ngoài ra, điểm rèn luyện cũng sẽ được thể hiện trong phụ lục văn bằng khi sinh viên tốt nghiệp."
+  },
+
+  {
+    "intent": "thoi_gian_danh_gia_drl",
+    "questions": [
+      "khi nào đánh giá điểm rèn luyện",
+      "thời gian đánh giá đrl",
+      "bao giờ đánh giá điểm rèn luyện",
+      "đánh giá rèn luyện khi nào",
+      "khi nào nộp điểm rèn luyện"
+    ],
+    "answer": "Thời gian đánh giá điểm rèn luyện được Nhà trường thông báo vào cuối mỗi học kỳ.<br>Sinh viên vui lòng theo dõi thông báo trên hệ thống từ Trường/Khoa mình đang theo học để thực hiện đánh giá đúng thời hạn."
+  },
+
+  {
+    "intent": "xem_diem_ren_luyen",
+    "questions": [
+      "xem điểm rèn luyện ở đâu",
+      "xem đrl như thế nào",
+      "làm sao xem điểm rèn luyện",
+      "kiểm tra điểm rèn luyện",
+      "điểm rèn luyện của em bao nhiêu"
+    ],
+    "answer": "Sinh viên có thể xem điểm rèn luyện theo từng học kỳ trên hệ cổng thông tin sinh viên của Nhà trường.<br>Nếu cần hỗ trợ, vui lòng liên hệ Phòng CTSV."
+    },
+
+{
+    "intent": "quy_dinh_diem_ren_luyen",
+    "questions": [
+       "quy định điểm rèn luyện",
+       "quy chế chấm điểm rèn luyện",
+       "xem quy định điểm rèn luyện",
+       "file quy định điểm rèn luyện",
+       "tài liệu chấm điểm rèn luyện",
+       "cách tính điểm rèn luyện theo quy định",
+       "quy chế đánh giá kết quả rèn luyện"
+    ],
+    "answer": "📊 Quy định chấm điểm rèn luyện sinh viên UMP <br> Xem tại:<br>👉 <a href='/docs/5158_quy_che_danh_gia_ket_qua_ren_luyen.pdf' target='_blank'>Xem / tải file PDF</a>"
+  }
+
+]

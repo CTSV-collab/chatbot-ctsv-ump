@@ -1,0 +1,60 @@
+[
+  {
+    "intent": "tu_van_tam_ly_chung",
+    "questions": [
+      "em muốn được hỗ trợ tâm lý",
+      "em cần tư vấn tâm lý",
+      "phòng ctsv có tư vấn tâm lý không",
+      "trường có hỗ trợ tâm lý không",
+      "em đang stress quá",
+      "em bị áp lực học tập",
+      "em mất ngủ vì căng thẳng",
+      "em lo lắng quá",
+      "em hoang mang không biết làm sao",
+      "em muốn nói chuyện với người tư vấn"
+    ],
+    "answer": "Chào em, Phòng gửi em cách thức liên hệ Phòng Tham vấn:.<br><br>Để được hỗ trợ, em vui lòng xem thông tin chi tiết tại:<br>👉 <a href='https://sv.ump.edu.vn/sinh-vien/tin-tuc/thong-tin-phong-tham-van.html?pIDDanhMuc=11' target='_blank'>Phòng Tham vấn Tâm lý Sinh viên</a><br><br>Hoặc liên hệ trực tiếp Phòng CTSV để được hỗ trợ."
+  },
+  {
+    "intent": "dat_lich_tu_van_tam_ly",
+    "questions": [
+      "đặt lịch tư vấn tâm lý",
+      "đăng ký tư vấn tâm lý",
+      "em muốn đặt lịch gặp chuyên viên tâm lý",
+      "làm sao để đăng ký tư vấn",
+      "đăng ký hỗ trợ tâm lý ở đâu",
+      "tư vấn tâm lý online được không",
+      "tư vấn tâm lý trực tiếp ở đâu",
+      "quy trình tư vấn tâm lý",
+      "tư vấn tâm lý mất phí không"
+    ],
+    "answer": "Cách thức đăng ký tham vấn: <br> -Đăng ký trực tiếp hoặc điện thoại trạm y tế: (028) 385 39 022.<br>- Trực tiếp đến phòng tham vấn, liên hệ Tâm lý gia trực để được tham vấn (các buổi chiều).<br>-    Khi cấp bách, gặp khó khăn, liên hệ : TS. Phạm Phương Thảo: 0988 306 402, phuongthaops@gmail.com <br> Em vui lòng xem thông tin chi tiết tại:<br>👉 <a href='https://sv.ump.edu.vn/sinh-vien/tin-tuc/thong-tin-phong-tham-van.html?pIDDanhMuc=11' target='_blank'>Phòng Tham vấn Tâm lý Sinh viên</a>"
+  },
+  {
+    "intent": "bao_mat_thong_tin_tam_ly",
+    "questions": [
+      "tư vấn tâm lý có bảo mật không",
+      "em sợ lộ thông tin",
+      "em muốn được giữ kín",
+      "tư vấn tâm lý có riêng tư không",
+      "ai sẽ biết em đi tư vấn",
+      "em có bị báo về gia đình không"
+    ],
+    "answer": "Về nguyên tắc, tư vấn tâm lý ưu tiên <b>bảo mật và riêng tư</b> cho sinh viên theo quy định của Nhà trường và đạo đức nghề nghiệp.<br><br>Trong một số tình huống liên quan đến <b>an toàn khẩn cấp</b> (nguy cơ tự làm hại bản thân hoặc người khác), đơn vị hỗ trợ có thể cần phối hợp để đảm bảo an toàn cho em.<br><br>Nếu em cần, em có thể hỏi trực tiếp cán bộ/đơn vị tư vấn về phạm vi bảo mật trước khi bắt đầu."
+  },
+  {
+    "intent": "ho_tro_khan_cap_tam_ly",
+    "questions": [
+      "em đang rất tuyệt vọng",
+      "em không chịu nổi nữa",
+      "em muốn tự tử",
+      "em muốn tự làm hại bản thân",
+      "em có ý định tự sát",
+      "em bị bạo lực",
+      "em bị xâm hại",
+      "em đang hoảng loạn",
+      "em cần giúp ngay"
+    ],
+    "answer": "Phòng hiểu rằng đôi khi việc học tập và cuộc sống có thể khiến em cảm thấy áp lực hoặc mệt mỏi.<br><br>Nếu em đang gặp khó khăn về cảm xúc, em có thể tìm đến người thân, bạn bè hoặc người mà em tin tưởng để được chia sẻ và hỗ trợ.<br><br>Ngoài ra, em có thể liên hệ Phòng CTSV hoặc tham khảo thông tin tại:<br>👉 <a href='https://sv.ump.edu.vn/sinh-vien/tin-tuc/thong-tin-phong-tham-van.html?pIDDanhMuc=11' target='_blank'>Phòng Tham vấn Tâm lý Sinh viên</a><br><br>Trong trường hợp cần hỗ trợ y tế khẩn cấp, vui lòng gọi <b>115</b>.<br><br>Phòng CTSV luôn sẵn sàng đồng hành cùng em."
+  }
+]

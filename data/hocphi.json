@@ -7,7 +7,7 @@
       "bao giờ nộp học phí",
       "hạn đóng học phí"
     ],
-    "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường."
+    "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường được đăng tải trên cổng thông tin sinh viên."
   },
 
  {
@@ -18,6 +18,6 @@
       "thời hạn để xin gia hạn",
       "thời gian gia hạn đến khi nào"
     ],
-    "answer": "Sinh viên nộp hồ sơ xin gia hạn học phí về Trường/Khoa đang theo học theo thông báo hiện hành."
+    "answer": "Sinh viên nộp hồ sơ xin gia hạn học phí về Trường/Khoa đang theo học theo thông báo được đăng tải trên công thông tin sinh viên."
   }
 ] 
