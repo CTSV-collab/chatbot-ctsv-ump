@@ -34,6 +34,17 @@
     ],
     "answer": "Sinh viên có thể xem điểm rèn luyện theo từng học kỳ trên hệ cổng thông tin sinh viên của Nhà trường.<br>Nếu cần hỗ trợ, vui lòng liên hệ Phòng CTSV."
     },
+  {
+    "intent": "cap_bang_diem_ren_luyen",
+    "questions": [
+      "xem điểm rèn luyện ở đâu",
+      "xem đrl như thế nào",
+      "làm sao xem điểm rèn luyện",
+      "kiểm tra điểm rèn luyện",
+      "điểm rèn luyện của em bao nhiêu"
+    ],
+    "answer": "Để được cấp Giấy chứng nhận kết quả rèn luyện, sinh viên vui lòng làm theo hướng dẫn <a href='https://sv.ump.edu.vn/sinh-vien/tin-tuc/de-xuat-cap-giay-chung-nhan-ket-qua-ren-luyen.html?pIDDanhMuc=12'target='_blank'>tại đây</a>"
+    },
 
 {
     "intent": "quy_dinh_diem_ren_luyen",
