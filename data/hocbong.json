@@ -18,7 +18,7 @@
   {
     "intent": "quy_che_hoc_bong",
     "questions": [
-     "quy chế học bổng",
+    "quy chế học bổng",
     "quy định học bổng",
     "xem quy chế học bổng",
     "xem quy định học bổng",
@@ -31,81 +31,80 @@
   },
   
     {
-  "intent": "hoc_bong_khuyen_hoc_la_gi",
+  "intent": "hoc_bong_khuyen_hoc",
   "questions": [
     "học bổng khuyến học là gì",
     "học bổng khuyến học",
     "học bổng học tập là gì",
     "khuyến học là gì"
   ],
-  "answer": "Học bổng Khuyến học là học bổng được Nhà trường xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên trong từng năm học theo quy định."
-},
-
-{
-  "intent": "dieu_kien_hoc_bong_khuyen_hoc",
-  "questions": [
-    "điều kiện xét học bổng khuyến học",
-    "gpa bao nhiêu thì được học bổng khuyến học",
-    "điểm rèn luyện bao nhiêu thì được học bổng khuyến học",
-    "cần đạt gì để được học bổng khuyến học",
-    "điều kiện học bổng khuyến học"
-  ],
-  "answer": "Học bổng Khuyến học được xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên.<br>Sinh viên cần đạt kết quả học tập và điểm rèn luyện từ loại <b>Khá</b> trở lên theo quy định của Nhà trường, cụ thể: <br> Xuất sắc: GPA: ≥ 3,60 và ĐRL ≥ 90 => 100%HP <br> Giỏi: GPA ≥ 3,20 và ĐRL ≥ 80 => 75%HP <br> Khá: GPA ≥ 2,50 và ĐRL ≥ 65 => 50%HP"
-},
-
-
-{
-  "intent": "canh_bao_hoc_tap_hoc_bong_khuyen_hoc",
-  "questions": [
-    "bị cảnh báo học tập có được học bổng khuyến học không",
-    "bị cảnh cáo có được xét học bổng khuyến học không",
-    "đang bị cảnh báo có được học bổng không"
-  ],
-  "answer": "Sinh viên bị cảnh báo học tập hoặc vi phạm kỷ luật sẽ không đủ điều kiện xét học bổng Khuyến học theo quy định."
-},
-
-{
-  "intent": "thoi_gian_xet_hoc_bong_khuyen_hoc",
-  "questions": [
-    "khi nào xét học bổng khuyến học",
-    "bao giờ xét học bổng khuyến học",
-    "xét học bổng khuyến học khi nào",
-    "học bổng xét theo năm hay học kỳ"
-  ],
-  "answer": "Học bổng Khuyến học được xét sau khi kết thúc năm học, dựa trên kết quả học tập và rèn luyện của sinh viên."
-},
-
-{
-  "intent": "ket_qua_hoc_bong_khuyen_hoc",
-  "questions": [
-    "bao giờ có kết quả học bổng khuyến học",
-    "khi nào có danh sách học bổng khuyến học",
-    "xem kết quả học bổng khuyến học ở đâu"
-  ],
-  "answer": "Danh sách sinh viên được nhận học bổng sẽ được Nhà trường công bố sau khi hoàn tất quá trình xét duyệt.<br>Sinh viên vui lòng theo dõi thông báo trên cổng thông tin sinh viên."
-},
-
-{
-  "intent": "khong_dat_hoc_bong_khuyen_hoc",
-  "questions": [
-    "tại sao em không được học bổng khuyến học",
-    "vì sao em bị rớt học bổng khuyến học",
-    "không đạt học bổng khuyến học là do đâu"
-  ],
-  "answer": "Sinh viên không đạt học bổng có thể do chưa đáp ứng tiêu chí về kết quả học tập hoặc điểm rèn luyện theo quy định.<br>Nếu có thắc mắc, vui lòng liên hệ Phòng CTSV để được hỗ trợ kiểm tra."
+  "answer": "<b>Học bổng Khuyến học</b> là học bổng được Nhà trường xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên trong từng năm học theo quy định."
 },
 
     {
-  "intent": "thong_tin_hoc_bong_tai_tro",
+  "intent": "hoc_bong_tai_tro",
   "questions": [
     "học bổng tài trợ là gì",
-    "học bổng này của trường hay bên ngoài",
-    "nguồn học bổng từ đâu",
-    "sinh viên năm nhất xin được không",
-    "học bổng xét theo năm hay học kỳ"
+    "học bổng tài trợ",
+    "học bổng này của trường hay bên ngoài"
   ],
-  "answer": "Học bổng tài trợ là học bổng do các tổ chức, cá nhân ngoài Trường tài trợ cho sinh viên.<br>Điều kiện nhận học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ và được nêu rõ trong thông báo học bổng."
+  "answer": "<b>Học bổng tài trợ</b> là học bổng do các tổ chức, cá nhân ngoài Trường tài trợ cho sinh viên.<br>Điều kiện nhận học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ và được nêu rõ trong thông báo học bổng."
   },
+{
+    "intent": "hoc_bong_tan_sinh_vien",
+    "questions": [
+      "học bổng tân sinh viên",
+      "học bổng tân sv",
+      "học bổng đầu vào",
+      "tân sinh viên có học bổng gì",
+      "trường có học bổng tân sinh viên không",
+      "em muốn hỏi học bổng tân sinh viên",
+      "học bổng cho tân sinh viên là gì",
+      "học bổng nhập học",
+      "học bổng dành cho sinh viên năm nhất"
+    ],
+    "answer": "🎓 <b>Học bổng Tân sinh viên</b> là học bổng dành cho sinh viên trúng tuyển và nhập học trong năm học mới theo tiêu chí của Nhà trường.<br>📌 Thông báo điều kiện, mức học bổng và thời gian xét sẽ được đăng trên fanpage Phòng CTSV và cổng thông tin sinh viên. <br> Ngoài ra, sinh viên sẽ được hướng dẫn các thông tin về Tuần Sinh hoạt công dân, học bổng, BHYT khi thực hiện đăng ký nhập học."
+  },
+
+{
+  "intent": "dieu_kien_hoc_bong",
+  "questions": [
+    "điều kiện xét học bổng",
+    "gpa bao nhiêu thì được học bổng",
+    "điểm rèn luyện bao nhiêu thì được học bổng",
+    "cần đạt gì để được học bổng",
+    "điều kiện nhận học bổng",
+    "làm thế nào để có học bổng"
+  ],
+  "answer": "<b>Học bổng Tân Sinh viên</b> dành cho Tân sinh viên của mỗi năm học, Sinh viên vui lòng theo dõi thông báo chính thức của Phòng CTSV để biết điều kiện cụ thể của năm học hiện tại.<br><br> <b>Học bổng Khuyến học</b> được xét dựa trên kết quả học tập và điểm rèn luyện của sinh viên.<br>Sinh viên cần đạt kết quả học tập và điểm rèn luyện từ loại <b>Khá</b> trở lên theo quy định của Nhà trường, cụ thể: <br> Xuất sắc: GPA: ≥ 3,60 và ĐRL ≥ 90 => 100%HP <br> Giỏi: GPA ≥ 3,20 và ĐRL ≥ 80 => 75%HP <br> Khá: GPA ≥ 2,50 và ĐRL ≥ 65 => 50%HP <br><br> <b>Học bổng tài trợ: </b> Điều kiện xét học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ như:<br>- Kết quả học tập<br>- Điểm rèn luyện<br>- Hoàn cảnh gia đình<br>- Tham gia hoạt động xã hội<br><br>Sinh viên vi phạm kỷ luật hoặc bị cảnh báo học tập có thể không đủ điều kiện xét học bổng."
+},
+
+{
+  "intent": "thoi_gian_xet_hoc_bong",
+  "questions": [
+    "khi nào xét học bổng",
+    "bao giờ xét học bổng",
+    "xét học bổng khi nào",
+    "học bổng xét theo năm hay học kỳ",
+    "thời gian nộp học bổng",
+    "hạn nộp học bổng",
+    "học bổng đầu vào xét lúc nào"
+  ],
+  "answer": "🗓️ <b>Thời gian xét/nộp Học bổng Tân sinh viên</b> sẽ theo thông báo từng năm học<br><br> <b>Học bổng Khuyến học</b> được xét sau khi kết thúc năm học, dựa trên kết quả học tập và rèn luyện của sinh viên. <br><br> <b>Học bổng tài trợ:</b> Thời gian xét/nộp học bổng tài trợ sẽ được nêu cụ thể trong các thông báo học bổng."
+},
+
+{
+  "intent": "ket_qua_hoc_bong",
+  "questions": [
+    "bao giờ có kết quả học bổng",
+    "khi nào có danh sách học bổng",
+    "xem kết quả học bổng ở đâu",
+    "có email báo kết quả không",
+    "không đậu thì có biết lý do không",
+    "bao lâu thì được nhận tiền học bổng"
+  ],
+  "answer": "Danh sách sinh viên được nhận các loại học bổng sẽ được Nhà trường công bố sau khi hoàn tất quá trình xét duyệt.<br>Sinh viên vui lòng theo dõi thông báo trên cổng thông tin sinh viên và fanpage của Phòng Công tác sinh viên."
+},
 
   {
   "intent": "gia_tri_hoc_bong",
@@ -114,21 +113,7 @@
     "học bổng được bao nhiêu tiền",
     "học bổng có phải trả lại không"
   ],
-  "answer": "Giá trị học bổng phụ thuộc vào quy định và ngân sách của Nhà tài trợ."
-  },
-
-  {
-  "intent": "dieu_kien_xet_hoc_bong_tai_tro",
-  "questions": [
-    "điều kiện xin học bổng tài trợ",
-    "gpa bao nhiêu thì được học bổng",
-    "điểm bao nhiêu thì được học bổng",
-    "điểm rèn luyện thấp có bị loại không",
-    "học lực trung bình có được xét không",
-    "hoàn cảnh khó khăn có bắt buộc không",
-    "đang bị cảnh báo học tập có nộp được không"
-  ],
-  "answer": "Điều kiện xét học bổng phụ thuộc vào tiêu chí của từng Nhà tài trợ như:<br>- Kết quả học tập<br>- Điểm rèn luyện<br>- Hoàn cảnh gia đình<br>- Tham gia hoạt động xã hội<br><br>Sinh viên vi phạm kỷ luật hoặc bị cảnh báo học tập có thể không đủ điều kiện xét học bổng."
+  "answer": "Giá trị học bổng tài trợ phụ thuộc vào quy định của Nhà tài trợ."
   },
 
   {
@@ -141,20 +126,7 @@
     "thiếu giấy tờ có bổ sung được không",
     "hồ sơ nộp trễ có được nhận không"
   ],
-  "answer": "Hồ sơ xin học bổng phụ thuộc vào yêu cầu của từng Nhà tài trợ, thường bao gồm:<br>- Đơn xin học bổng<br>- Bảng điểm học tập<br>- Bảng điểm rèn luyện<br>- Giấy xác nhận tham gia hoạt động xã hội<br>- Giấy xác nhận hoàn cảnh khó khăn (nếu có)<br><br>Sinh viên cần nộp hồ sơ đúng thời hạn theo thông báo."
-  },
-
-  {
-  "intent": "ket_qua_hoc_bong",
-  "questions": [
-    "bao giờ có kết quả học bổng",
-    "có email báo kết quả không",
-    "không đậu thì có biết lý do không",
-    "bao lâu thì được nhận tiền học bổng",
-    "nhận tiền mặt hay chuyển khoản",
-    "tiền học bổng có bị trừ học phí không"
-  ],
-  "answer": "Kết quả học bổng sẽ được công bố trên các kênh thông tin chính thức của Phòng CTSV.<br>Sinh viên có thể nhận học bổng bằng tiền mặt hoặc chuyển khoản tùy theo quy định của Nhà tài trợ."
+  "answer": "Hồ sơ xin <b>học bổng tài trợ<b> phụ thuộc vào yêu cầu của từng Nhà tài trợ, thường bao gồm:<br>- Đơn xin học bổng<br>- Bảng điểm học tập<br>- Bảng điểm rèn luyện<br>- Giấy xác nhận tham gia hoạt động xã hội<br>- Giấy xác nhận hoàn cảnh khó khăn (nếu có)<br><br>Sinh viên cần nộp hồ sơ đúng thời hạn theo thông báo."
   },
 
   {
