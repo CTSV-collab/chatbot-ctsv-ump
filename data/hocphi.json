@@ -7,7 +7,7 @@
       "bao giờ nộp học phí",
       "hạn đóng học phí"
     ],
-    "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường được đăng tải trên cổng thông tin sinh viên."
+    "answer": "Sinh viên đóng học phí theo thông báo của Nhà trường được đăng tải trên cổng thông tin sinh viên. Chi tiết vui lòng xem <a href='https://ump.edu.vn/tin-tuc-su-kien/thong-bao/thong-bao-ve-viec-dong-hoc-phi-nam-hoc-2025-2026/8866'target='_blank'>tại đây</a>"
   },
 
  {
@@ -19,5 +19,28 @@
       "thời gian gia hạn đến khi nào"
     ],
     "answer": "Sinh viên nộp hồ sơ xin gia hạn học phí về Trường/Khoa đang theo học theo thông báo được đăng tải trên công thông tin sinh viên."
+  },
+
+  {
+    "intent": "muc_dong_hoc_phi",
+    "questions": [
+       "mức đóng học phí",
+    "học phí bao nhiêu",
+    "một học kỳ đóng bao nhiêu tiền",
+    "học phí là bao nhiêu",
+    "em cần đóng học phí bao nhiêu",
+    "mức học phí hiện tại",
+    "học phí mỗi kỳ",
+    "học phí một tín chỉ",
+    "học phí tính như thế nào",
+    "cách tính học phí",
+    "đóng học phí bao nhiêu tiền",
+    "học phí trường mình",
+    "học phí bao nhiêu một năm",
+    "học phí hệ chính quy",
+    "mức thu học phí"
+    ],
+    "answer": "Hiện tại Nhà trường chưa ban hành mức thu học phí năm học 2025 - 2026, bạn vui lòng tham khảo mức thu học phí năm học 2024 - 2025 <a href='https://ump.edu.vn/tuyen-sinh-dao-tao/dai-hoc/thong-bao/8866/thong-bao-ve-viec-dong-hoc-phi-nam-hoc-2025-2026'target='_blank'>tại đây</a>"
   }
+  
 ] 
