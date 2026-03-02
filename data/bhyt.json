@@ -43,7 +43,7 @@
       "bao giờ bhyt có hiệu lực",
       "sau khi đóng bhyt bao lâu thì dùng được"
     ],
-    "answer": "Thẻ BHYT có hiệu lực theo đợt đăng ký và được ghi rõ trong thông báo được đăng tải trên cổng thông tin sinh viên."
+    "answer": "Thẻ BHYT có hiệu lực theo đợt đăng ký và được ghi rõ trong thông báo được đăng tải trên cổng thông tin sinh viên. <br> Sinh viên có thể tra cứu thông tin BHYT trên trang web của BHXH Việt Nam:  <a href='https://baohiemxahoi.gov.vn/tracuu/Pages/tra-cuu-ho-gia-dinh.aspx' target='_blank'>Web Bảo hiểm xã hội</a>"
   },
   {
   "intent": "dang_ky_bhyt_qua_han",
